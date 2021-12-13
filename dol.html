@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <script>
+        function convert() {
+            var dollar = document.getElementById("dollar").value;
+            var ruppe = dollar * 74;
+            document.getElementById("rupee").value = ruppe;
+
+        }
+    </script>
+</head>
+
+<body>
+    dollar($)<input type="number" id="dollar"><br> rupee(rs)
+    <input type="number" id="rupee"><br>
+    <input type="button" onclick="convert()" value="convert">
+
+
+
+</body>
+
+</html>

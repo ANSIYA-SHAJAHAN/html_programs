@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>calculator</title>
+    <script>
+        function add() {
+            a = parseInt(document.getElementById("a").value);
+            b = parseInt(document.getElementById("b").value);
+            s = a + b;
+            document.getElementById("result").value = s;
+
+        }
+
+        function sub() {
+            a = parseInt(document.getElementById("a").value);
+            b = parseInt(document.getElementById("b").value);
+            s = a - b;
+            document.getElementById("result").value = s;
+        }
+
+        function mult() {
+            a = parseInt(document.getElementById("a").value);
+            b = parseInt(document.getElementById("b").value);
+            s = a * b;
+            document.getElementById("result").value = s;
+        }
+
+        function div() {
+            a = parseInt(document.getElementById("a").value);
+            b = parseInt(document.getElementById("b").value);
+            s = a / b;
+            document.getElementById("result").value = s;
+        }
+    </script>
+</head>
+
+<body>
+    first number<input type="number" id="a"><br> second number<input type="number" id="b"> result
+    <input type="number" id="result"><br>
+    <input type="button" onclick="add()" value="sum">
+    <input type="button" onclick="sub()" value="sub">
+    <input type="button" onclick="mult()" value="mult">
+    <input type="button" onclick="div()" value="div">
+
+</body>
+
+</html>

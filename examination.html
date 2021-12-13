@@ -1,0 +1,66 @@
+<html lan="en">
+    <head>
+        <title>Online Exam</title>
+        <script type="text/javascript">
+            var c=0;
+            var score=0;
+            function funct()
+            {
+                if(document.getElementById('Mic').checked)
+        
+              {
+               score++;
+              }  
+             
+              if(document.getElementById('msw').checked)
+        
+        {
+         score++;
+        }  
+             if(document.getElementById('do').checked)
+             {
+                 score++;
+             }
+              
+              document.write("your score is:") ;
+              document.write(score);
+                
+            }
+</script>
+    </head>
+    <h1 align="center" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">ONLINE EXAMINATION</h1>
+    <table><tr>
+        <td>
+            <h2 style= "font-size: 20px;">1.MS Word is software of --------</h2> <br>
+            <input type ="radio" id="App" name="MS1" value="qn0">Apple<br>
+            <input type ="radio" id="And" name="MS1" value="qn1">Android<br>
+            <input type ="radio" id="Goo" name="MS1" value="qn2">Google<br>
+            <input type ="radio" id="Mic" name="MS1" value="qn3">Microsoft<br>
+        </td>
+    </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <h3 style="font-size: 20px;">2.Which is the word processing software</h3><br>
+                <input type ="radio" id="Ava" name="MS2" value="q0">Avast<br>
+                <input type ="radio" id="msw" name="MS2" value="q1">MS Word 2007<br>
+                <input type ="radio" id="chr" name="MS2" value="q2">Google Chrome<br>
+                <input type ="radio" id="moz" name="MS2" value="q3">Mozilla fire fox<br>
+           </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <h4 style="font-size: 20px;">3.The valid format of MS Word is --------</h3><br>
+                    <input type ="radio" id="ex" name="MS3" value="0qn">.exe<br>
+                    <input type ="radio" id="do" name="MS3" value="1qn">.doc<br>
+                    <input type ="radio" id="pn" name="MS3" value="2qn">.png<br>
+                    <input type ="radio" id="jp" name="MS3" value="3qn">.jpeg<br>
+
+            </td>
+        </tr>
+    </table>
+          <button onclick="funct()">SUBMIT</button>
+</html>
